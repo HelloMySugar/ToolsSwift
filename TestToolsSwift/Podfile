@@ -1,0 +1,5 @@
+platform :ios, '10.0'
+use_frameworks!
+target "TestToolsSwift" do
+    pod 'MBProgressHUD', '0.9'
+end

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hV1-xh-6cc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="16l-go-9gw">
+            <objects>
+                <viewController id="hV1-xh-6cc" customClass="ViewController" customModule="TestToolsSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ges-MP-HQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工具类（部分使用，具体看类）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1F-uT-5ep">
+                                <rect key="frame" x="45" y="40" width="285.5" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yu0-PU-zC6">
+                                <rect key="frame" x="147" y="168" width="81" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Toast弹框"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="hV1-xh-6cc" eventType="touchUpInside" id="Uqf-jz-pTk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDR-aj-j7d">
+                                <rect key="frame" x="141.5" y="232" width="92" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="字符串工具"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="hV1-xh-6cc" eventType="touchUpInside" id="LB4-Ok-xS5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywR-SB-uZ9">
+                                <rect key="frame" x="132" y="296" width="111" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="图片处理工具"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="hV1-xh-6cc" eventType="touchUpInside" id="GFL-P6-VqO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JN7-gN-fa1">
+                                <rect key="frame" x="150.5" y="360" width="74" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="验证工具"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="hV1-xh-6cc" eventType="touchUpInside" id="ex2-IE-Hwn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ho9-AS-xB4">
+                                <rect key="frame" x="150.5" y="424" width="74" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="颜色工具"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="hV1-xh-6cc" eventType="touchUpInside" id="m1R-Ea-mzJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cH-cE-FI4">
+                                <rect key="frame" x="150.5" y="104" width="74" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="静态工具"/>
+                                <connections>
+                                    <action selector="clickBtn:" destination="hV1-xh-6cc" eventType="touchUpInside" id="X9r-nL-msH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ho9-AS-xB4" firstAttribute="top" secondItem="JN7-gN-fa1" secondAttribute="bottom" constant="30" id="2Ay-1e-q9k"/>
+                            <constraint firstItem="n1F-uT-5ep" firstAttribute="top" secondItem="YzA-pH-2AO" secondAttribute="top" constant="20" id="4H0-OY-PZr"/>
+                            <constraint firstItem="8cH-cE-FI4" firstAttribute="top" secondItem="n1F-uT-5ep" secondAttribute="bottom" constant="40" id="5CA-3b-EAX"/>
+                            <constraint firstItem="JN7-gN-fa1" firstAttribute="centerX" secondItem="ges-MP-HQ6" secondAttribute="centerX" id="5Uo-UH-M22"/>
+                            <constraint firstItem="n1F-uT-5ep" firstAttribute="centerX" secondItem="ges-MP-HQ6" secondAttribute="centerX" id="684-Us-Mf5"/>
+                            <constraint firstItem="QDR-aj-j7d" firstAttribute="top" secondItem="Yu0-PU-zC6" secondAttribute="bottom" constant="30" id="CnS-fi-zCJ"/>
+                            <constraint firstItem="ywR-SB-uZ9" firstAttribute="centerX" secondItem="ges-MP-HQ6" secondAttribute="centerX" id="FjZ-PS-nyH"/>
+                            <constraint firstItem="ho9-AS-xB4" firstAttribute="centerX" secondItem="ges-MP-HQ6" secondAttribute="centerX" id="KZL-9q-LdJ"/>
+                            <constraint firstItem="8cH-cE-FI4" firstAttribute="centerX" secondItem="ges-MP-HQ6" secondAttribute="centerX" id="P2H-Za-tv5"/>
+                            <constraint firstItem="QDR-aj-j7d" firstAttribute="centerX" secondItem="ges-MP-HQ6" secondAttribute="centerX" id="U5a-up-eFf"/>
+                            <constraint firstItem="Yu0-PU-zC6" firstAttribute="centerX" secondItem="ges-MP-HQ6" secondAttribute="centerX" id="ZuG-zu-JcJ"/>
+                            <constraint firstItem="Yu0-PU-zC6" firstAttribute="top" secondItem="8cH-cE-FI4" secondAttribute="bottom" constant="30" id="c3l-g5-mld"/>
+                            <constraint firstItem="JN7-gN-fa1" firstAttribute="top" secondItem="ywR-SB-uZ9" secondAttribute="bottom" constant="30" id="jEG-Cc-Uje"/>
+                            <constraint firstItem="ywR-SB-uZ9" firstAttribute="top" secondItem="QDR-aj-j7d" secondAttribute="bottom" constant="30" id="wU5-Vb-B6C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YzA-pH-2AO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjp-EX-QNU" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
