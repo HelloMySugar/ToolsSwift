@@ -14,6 +14,7 @@ class ToastTool: NSObject {
     //Show toast with message
     @objc class func showToast(by str: String?, in superView: UIView?) {
         //如果父视图为nil，则return
+        //If superview is nil, then return
         if superView == nil {
             return
         }

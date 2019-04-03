@@ -28,6 +28,7 @@ class StringTool: NSObject {
         return stringRect?.size ?? CGSize.zero
     }
     
+    //Judge URL
     @objc class func isURL(_ judgeUrl: String?) -> Bool {
         var url = judgeUrl
         if (url?.count ?? 0) < 1 {
@@ -44,6 +45,7 @@ class StringTool: NSObject {
         return urlTest.evaluate(with: url)
     }
     
+    //Get URL Str for a string
     @objc class func getURLFromStr(_ string: String?) -> [Any]? {
         let regulaStr = "((http[s]{0,1}|ftp)://[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)|(www.[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%^&*+?:_/=<>]*)?)"
         
@@ -73,6 +75,8 @@ class StringTool: NSObject {
         return changeStr!
     }
     
+    //Encryption of credit card Numbers
+    //信用卡号码加密
     @objc class func addSpaceToCardNo(_ string: String) -> String {
         if string.count == 0 {
             return string
