@@ -5,5 +5,5 @@
 如果需要OC版，请点击查看https://github.com/HelloMySugar/Tools
 
 ### English:  
-Usually the project accumulation of writing tools, easy to use,  
-if you want OC version, please click https://github.com/HelloMySugar/Tools
+Project accumulated utility tools, easy to use,  
+If you want the OC version, click here https://github.com/HelloMySugar/Tools
